@@ -1,0 +1,14 @@
+name: MineOS
+version: 0.1.0
+main: edu.urosario.mineos.plugin.MineOSPlugin
+api-version: "1.21"
+description: Graba trazas de carga para el simulador MineOS y aplica una política de scheduling por niveles.
+commands:
+  mineos:
+    description: Control de MineOS (record, stop, status, policy)
+    usage: /mineos <record [ticks]|stop|status|policy <off|tiered>>
+    permission: mineos.admin
+permissions:
+  mineos.admin:
+    description: Permite usar /mineos
+    default: op
